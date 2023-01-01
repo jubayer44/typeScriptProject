@@ -5,8 +5,8 @@ export default function Navbar() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-white">
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <nav className="w-full bg-white md:fixed z-50 max-w-[1480px] border-b">
+            <div className="justify-between px-4 mx-auto md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link to="/">
@@ -56,24 +56,21 @@ export default function Navbar() {
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 hover:text-blue-600">
+                        <ul className="items-center justify-center px-2 space-y-4 md:flex md:space-x-6 md:space-y-0">
+                            <li className="text-gray-600 font-bold hover:text-blue-600">
                                 <Link to="/">Home</Link>
                             </li>
-                            <li className="text-gray-600 hover:text-blue-600">
+                            <li className="text-gray-600 font-bold hover:text-blue-600">
                                 <Link to="/blog">Blog</Link>
                             </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <Link to="/">About US</Link>
+                            <li className="text-gray-600 font-bold hover:text-blue-600">
+                                <Link to="/">Property</Link>
                             </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <Link to="/">Contact US</Link>
+                            <li className="text-gray-600 font-bold hover:text-blue-600">
+                                <Link to="/">Add Property</Link>
                             </li>
-                            <li className="text-gray-600 hover:text-blue-600">
+                            <li className="text-gray-600 font-bold hover:text-blue-600">
                                 <Link to="/login">Login</Link>
-                            </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <Link to="/register">Register</Link>
                             </li>
                         </ul>
                     </div>
